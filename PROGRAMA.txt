@@ -1,0 +1,68 @@
+PROGRAMACION DE UN TRIANGULO EN CUALQUIE EJE DE COORDENADAS        
+int contador=0;
+            /*eje de coordenadas del triangulo formado*/
+            int y=10;
+            int x=10;
+            /*lineas que quiere que se imprimir en el triangulo*/
+            int lineas=10;
+            /*Posiciona el eje en y*/
+            for(int a=1;a<y;a++){
+                System.out.println("y");
+                            }
+            /*ciclo para repitir y correr el eje en x e imprimir la piramide*/
+            while(contador<=lineas){
+               /*contador para el eje x y plotear puntos*/
+                for(int b=contador;b<x;b++){
+                    /*condicion para restar el eje de las x*/
+                    /*si x es menor x-1 entonces imprimir eje x si no(imprimir caracter de la piramide)*/
+                    if(b<x-1){
+                        System.out.print("x");
+                        /*si no plotear "caracter que quiera que sea la piramide"*/
+                             }
+                    else{
+                        for(int c=-1;c<contador;c++){
+                            /*imprimir el lado izquierdo de la piramide*/
+                            System.out.print("*");
+                                            }
+                            /*imprimir el lado derecho de la piramide*/
+                        for(int c=0;c<contador;c++){
+                            System.out.print("*");
+                                            }
+                            System.out.println();
+                        }                  
+                                          }
+                    /*aumento del contador para volver a repetir ciclo e imprimir una nueva linea*/
+                    contador++;
+                                    }
+            /*prueba para ver donde quedo el siguiente bloque*/
+            System.out.println("Haber");
+/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*
+PROGRAMACION DEL CULCULO DE AUMTENO DEL SUELDO DE UN EMPLEADO DE ACUERDO A LOS AÑOS TRANSCURRIDOS
+int año=3;
+int sueldo=40000;
+int edad=5;
+if(año>10){
+    int aumento=(int) (sueldo+sueldo*0.1);
+    System.out.println(aumento);
+}else if(año<=10&&año>5){
+    int aumento=(int) (sueldo+sueldo*0.07);
+    System.out.println(aumento);
+    }else if(año<=5&&año>3){
+    int aumento=(int) (sueldo+sueldo*0.05);
+    System.out.println(aumento);
+    }else{
+        int aumento=(int) (sueldo+sueldo*0.03);
+        System.out.println(aumento);
+    }
+/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*
+PROGRMACION DE UN TRIANGULO INVERTIDO
+int num=20;
+/*espacios en el eje x*/
+for(int a=1;a<=num;a++){
+    for(int c=2;c<=a;c++){
+        System.out.print(" ");
+                             }
+/*graficar el triangulo*/
+    for(int b=num+1;a<b;b--){
+        System.out.print("N");
+                             }
